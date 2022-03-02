@@ -77,8 +77,8 @@
     </p>
 </div>
 <div>
-    <span id="clear">清空签名板</span>
-    <span id="save">保存签名</span>
+    <span id="clear"> 清除</span>
+    <span id="save"> 保存協議及簽名</span>
 </div>
 </body>
 <script type="text/javascript">
@@ -216,10 +216,10 @@
             var image = new Image();
             image.src = this.canvas.toDataURL("image/png");
             if(image.src == this.emptyCanvas) {
-                alert('请先签名')
+                alert('請先簽名')
                 return;
             }
-            if(!confirm("你确定提交当前的签名吗?")){
+            if(!confirm("你確定提交當前簽名嗎吗?")){
                 console.log("你确定提交当前的签名吗?-->NO");
                 return;
             }
@@ -244,7 +244,7 @@
                     alert(data.message);
                 },
                 error:function(data,textStatus){
-                    alert("网络连接错误，请稍后再试!");
+                    alert("網絡錯誤");
 
                 }
             });
